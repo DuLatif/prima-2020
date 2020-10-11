@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Virologi</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rwd.css">
+    <link rel="stylesheet" href="animasi.css">
+
+    <link rel="shortcut icon" href="asset/logo.png">
+</head>
+<body id="home">
+    
+
+    <!-- Navbar -->
+
+        <div class="navbar">
+            <a href="#home" class="navbar-brand">
+                <img src="asset/logo.png" alt="virologi logo" height="40px">
+            </a>
+
+            <ul class="navbar-menu">
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="#corona" class="nav-item">Corona</a></li>
+                <li><a href="#pencegahan" class="nav-item">Cegah</a></li>
+                <li><a href="#masker" class="nav-item">Masker</a></li>
+                <li><a href="#relawan" class="nav-item">Relawan</a></li>
+                <li><button id="btnLoginNavbar"  class="nav-item">Login</button></li>
+            </ul>
+
+            <div class="icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="sidebar" id="sidebar">
+                <ul>
+                    <li class="sidebar-logo"><a href="#home"><img src="asset/logo.png" alt="logo virologi" height="80px"></a></li>
+                    <li class="sidebar-item"><a href="#corona">Tentang Corona</a></li>
+                    <li class="sidebar-item"><a href="#gejala">Gejala</a></li>
+                    <li class="sidebar-item"><a href="#penularan">Penularan</a></li>
+                    <li class="sidebar-item"><a href="#perkembangan">Perkembangan</a></li>
+                    <li class="sidebar-item"><a href="#pencegahan">Pencegahan</a></li>
+                    <li class="sidebar-item"><a href="#masker">Dapatkan Masker</a></li>
+                    <li class="sidebar-item"><a href="#donasi">Kirim Donasi</a></li>
+                    <li class="sidebar-item"><a href="#relawan">Ikut Relawan</a></li>
+                    <li class="sidebar-item"><button id="btnLoginSidebar">Login</button></li>
+                </ul>
+            </div>
+        </div>
+    
+    <!-- Last Navbar -->
+
+
+
+
+    <!-- Body -->
+        
+        <div class="container">
+
+            <!-- Jumbotron -->
+                <section class="jumbotron" id="jumbotron">
+                    <div class="row text-center">
+                        <div class="col"></div>
+                        <div class="col col-jumbotron">
+                            <img src="asset/dokter.png" alt="Dokter" id="dokter" height="350px">
+                            <p id="jumboKonten">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempore nostrum reprehenderit facere aut voluptas</p>
+
+                            <button id="btnLogin" class="btn btn-jumbotron">login</button>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </section>
+            <!-- Last Jumbotron -->
+            
+            
+            <!-- Tentang Corona -->
+                <section class="corona" id="corona">
+                    <div class="row wrap center">
+                        <div class="col" id="tentangCorona">
+                            <h3 class="heading">Apa itu Corona?</h3>
+                            <p>Virus 2019 Novel Coronavirus (2019/nCov) yang lebih dikenal dengan nama virus Corona adalah jenis baru dari coronavirus yang menular ke manusia. Virus ini bisa menyerang siapa saja, baik anak-anak, orang dewasa, lansia ,dan ibu hamil , maupun ibu menyusui . Infeksi virus ini disebut COVID-19 dan pertama kali ditemukan di kota Wuhan , Cina pada akhir Desember 2019. Virus ini menular dengan cepat dan telah menyebar ke wilayah lain di Cina dan ke beberapa negara.</p>
+                        </div>
+                        
+                        <div class="col" id="imgCorona">
+                            <img src="asset/virus.png" alt="virus corona" class="virus-corona">
+                        </div>
+                    </div>
+                </section>
+            <!-- Last tentang Corona -->
+
+
+            <!-- Gejala Corona -->
+                <section class="gejala text-center" id="gejala">
+                    <h1 class="heading">Gejala Terinfeksi</h1>
+                    <div class="row wrap center">
+                        <div class="card">
+                            <div class="card-img center">
+                                <img src="asset/gejala_demam.png" alt="kontak langsung" class="img-fluid">
+                            </div>
+                            <p class="card-deskripsi">Demam</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-img center">
+                                <img src="asset/gejala_batuk.png" alt="air liur penderita" class="img-fluid">
+                            </div>
+                            <p class="card-deskripsi">Batuk</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-img center">
+                                <img src="asset/gejala_sesakNapas.png" alt="mengkonsumsi hewan liar" class="img-fluid">
+                            </div>
+                            <p class="card-deskripsi">Sesak Nafas</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-img center">
+                                <img src="asset/gejala_sakitKepala.png" alt="mengkonsumsi hewan liar" class="img-fluid">
+                            </div>
+                            <p class="card-deskripsi">Sakit Kepala</p>
+                        </div>
+                    </div>
+                </section>
+            <!-- Last Gejala corona -->
+
+            <!-- Penularan Corona -->
+                <section class="penularan text-center" id="penularan">
+                    <h1 class="heading">Penularan Corona</h1>
+                    <div class="row wrap">
+                        <div class="card">
+                            <div class="card-img center">
+                                <img src="asset/penularan_kontakLangsung.png" alt="kontak langsung" class="img-fluid">
+                            </div>
+                            <p class="card-deskripsi">Kontak langsung dengan penderita</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-img center">
+                                <img src="asset/penularan_airLiur.png" alt="air liur penderita" class="img-fluid">
+                            </div>
+                            <p class="card-deskripsi">Menghirup air liur penderita</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-img center">
+                                <img src="asset/penularan_konsumsiHewanLiar.png" alt="mengkonsumsi hewan liar" class="img-fluid">
+                            </div>
+                            <p class="card-deskripsi">Mengkonsumsi hewan liar</p>
+                        </div>
+                    </div>
+                </section>
+            <!-- Last penularan corona -->
+
+
+            <!-- Perkembangan Corona -->
+                <section class="perkembangan text-center" id="perkembangan">
+                    <h1 class="heading">Perkembangan Corona</h1>
+                    <div class="row center wrap">
+                        <div class="col card">
+                            <h1 class="nilai">80.000</h1>
+                            <p clas="card-deskripsi">Kasus</p>
+                        </div>
+                        <div class="col card">
+                            <h1 class="nilai">21.000</h1>
+                            <p clas="card-deskripsi">Kematian</p>
+                        </div>
+                        <div class="col card">
+                            <h1 class="nilai">25.000</h1>
+                            <p clas="card-deskripsi">Sembuh</p>
+                        </div>
+                    </div>
+                </section>
+            <!-- Last perkembangan corona -->
+
+
+
+            <!-- Upaya Pencegahan -->
+                <section class="pencegahan" id="pencegahan">
+                    <h1 class="heading">Upaya Pencegahan</h1>
+
+                    <div class="row center wrap" id="pencegahanA">
+                        <div class="item  wrap">
+                            <div class="col center">
+                                <img src="asset/pencegahan_cuciTangan.png" alt="cuci tangan">
+                            </div>
+                            <div class="col col-2">
+                                <p class="card-deskripsi">Mencuci tangan sebelum makan</p>
+                            </div>
+                        </div>
+                        <div class="item  wrap">
+                            <div class="col center">
+                                <img src="asset/pencegahan_batukTisu.png" alt="cuci tangan">
+                            </div>
+                            <div class="col col-2">
+                                <p class="card-deskripsi">Menggunakan tisu ketika batuk</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row center wrap" id="pencegahanB">
+                        <div class="item wrap">
+                            <div class="col center">
+                                <img src="asset/pencegahan_masakMatang.png" alt="cuci tangan">
+                            </div>
+                            <div class="col col-2">
+                                <p class="card-deskripsi">Memasak daging hingga matang agar virus mati</p>
+                            </div>
+                        </div>
+                        <div class="item wrap">
+                            <div class="col center">
+                                <img src="asset/pencegahan_kontakPenderita.png" alt="cuci tangan">
+                            </div>
+                            <div class="col col-2">
+                                <p class="card-deskripsi">Menghidari kontak langsung dengan penderita</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row center wrap" id="pencegahanC">
+                        <div class="item wrap">
+                            <div class="col center">
+                                <img src="asset/pencegahan_kontakHewan.png" alt="cuci tangan">
+                            </div>
+                            <div class="col col-2">
+                                <p class="card-deskripsi">Menghindari kontak langsung dengan hewan liar</p>
+                            </div>
+                        </div>
+                        <div class="item wrap">
+                            <div class="col center">
+                                <img src="asset/pencegahan_pakaiMasker.png" alt="cuci tangan">
+                            </div>
+                            <div class="col col-2">
+                                <p class="card-deskripsi">Menggunakan masker yang melindungi dari virus</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!-- Last upaya  pencegahan -->
+            
+
+            <!-- Masker -->
+                <section class="masker card-big text-center" id="masker">
+                    <h1 class="heading">Dapatkan Masker</h1>
+                    <img src="asset/beli-masker.png" alt="Beli Masker" class="img-fluid">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius soluta quasi velit id magni suscipit ipsa vitae adipisci molestias nisi quae, in aspernatur, sunt natus ducimus? Iure ipsa similique veniam!</p>
+                    <button class="btn button-style" id="btnMasker">Beli Masker</button>
+                </section>
+            <!-- Last Masker -->
+
+            <!-- Donasi -->
+                <section class="donasi card-big text-center" id="donasi">
+                    <h1 class="heading">Kirim Donasi</h1>
+                    <img src="asset/beri-donasi.png" alt="beri donasi" class="img-fluid">
+                    <p>Jadilah orang yang peduli dengan membantu saudara-saudara kita yang sedang terkena musibah. Kamu bisa mengirimkan donasi melalui kami kepada para korban virus corona. Dana ini akan digunakan untuk membiayai kebutuhan medis dan kebutuhan lainnya.</p>
+                    <button class="btn button-style" id="btnDonasi">Kirim Donasi</button>
+                </section>
+            <!-- Last DOnasi -->
+
+            <!-- Relawan -->
+                <section class="relawan card-big text-center" id="relawan">
+                    <h1 class="heading">Ingin Membantu?</h1>
+                    <img src="asset/dokter.png" alt="jadilah relawan" class="img-fluid">
+                    <p>Ingin membantu saudara-saudara kita yang terkena musibah virus corona? Jika begitu segeralah daftarkan dirimu sebagai relawan sejati. Untuk menjadi relawan kamu harus memiliki penegetahuan dan pengalaman yang cukup untuk terjun melawan virus secara langsung.</p>
+                    <button class="btn button-style" id="btnRelawan">Jadi Relawan</button>
+                </section>
+            <!-- Last Relawan -->
+
+            
+        </div>
+    
+    <!-- Last BOdy -->
+    
+
+
+
+    <!-- Footer -->
+        <section class="footer">
+            
+            <div class="row center wrap">
+                <div class="item">
+                    <img src="asset/logo.png" alt="logo virologi" height="150px">
+                </div>
+                <div class="item">
+                    <h3 class="title-footer">Halaman</h3>
+                    <ul>
+                        <li><a href="#corona">Tentang Corona</a></li>
+                        <li><a href="#gejala">Gejala</a></li>
+                        <li><a href="#penularan">Penularan</a></li>
+                        <li><a href="#perkembangan">Perkembangan</a></li>
+                        <li><a href="#pencegahan">Pencegahan</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3 class="title-footer">Layanan</h3>
+                    <ul>
+                        <li><a href="#masker">Masker N95</a></li>
+                        <li><a href="#donasi">Donasi</a></li>
+                        <li><a href="#relawan">Relawan</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+        <footer class="text-center">Copyright &copy; 2020 | Powered by Nekat Team</footer>
+    <!-- Last Footer -->
+
+
+
+<!-- ======================= Modal =========================== -->
+            <div class="row center">
+                <div class="modal-dialog" id="modalForm">
+                    
+                </div>
+            </div>
+
+            <div class="data-modal">
+
+                <!-- Modal Login -->
+                <div id="modalLogin">
+                    <div class="modal-header">
+                        <p>login</p>
+                    </div>
+                    <div class="modal-content">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-close button-style">Kirim</button>
+                        <button class="btn-close" id="clsLogin">Close</button>
+                    </div>
+                </div>
+    
+                <!-- Modal Masker -->
+                <div id="modalMasker">
+                    <div class="modal-header">
+                        <p>Beli Masker</p>
+                    </div>
+                    <div class="modal-content">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-close button-style">Kirim</button>
+                        <button class="btn-close" id="clsLogin">Close</button>
+                    </div>
+                </div>
+
+                <!-- Modal Donasi -->
+                <div id="modalDonasi">
+                    <div class="modal-header">
+                        <p>Kirim Donasi</p>
+                    </div>
+                    <div class="modal-content">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-close button-style">Kirim</button>
+                        <button class="btn-close" id="clsLogin">Close</button>
+                    </div>
+                </div>
+
+                <!-- Modal Relawan -->
+                <div id="modalRelawan">
+                    <div class="modal-header">
+                        <p>Jadilah Relawan</p>
+                    </div>
+                    <div class="modal-content">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-close button-style">Kirim</button>
+                        <button class="btn-close" id="clsLogin">Close</button>
+                    </div>
+                </div>
+            </div>
+
+
+<!-- ===================== Akhir Modal ====================== -->
+
+    <script src="script/script.js"></script>
+    
+</body>
+</html>

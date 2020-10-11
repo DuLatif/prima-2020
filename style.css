@@ -1,0 +1,528 @@
+@font-face {
+    font-family: clab;
+    src: url('Asset/font/clab.otf');
+}
+
+@font-face {
+    font-family: linotte;
+    src: url('Asset/font/linotte.otf');
+}
+
+* {
+    font-family: linotte;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 1000px;
+    overflow-x: hidden;
+    background-color: #ebd1ff;
+    color: rgba(99, 64, 124, 0.8);
+    font-weight: 200;
+}
+
+h1, h2 , h3 , h4 , h5 , .heading {
+    font-family: clab;
+}
+
+section {
+    padding: 100px 50px;
+}
+
+a {
+    text-decoration: aquamarine
+}
+
+a:hover {
+    opacity: .6;
+    transform: translate(10px 10px);
+}
+
+li {
+    list-style-type: none;
+}
+
+.heading {
+    text-align: center;
+}
+
+.container {
+    padding: 0px 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+}
+
+.col-2 {
+    flex:2;
+}
+
+.col-4 {
+    flex: 4;
+}
+
+.col-sm {
+    min-width: 300px;
+    background-color: darkblue;
+}
+
+.col-lg {
+    min-width: 400px;
+}
+
+
+
+.col-jumbotron {
+    flex:4;
+}
+
+.content-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bg-light {
+    background-color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.img-fluid {
+    max-width: 60%;
+    height: auto;
+}
+
+.text-light {
+    color: rgb(194, 162, 228);
+}
+
+.p-5 {
+    padding: 50px;
+}
+
+.btn {
+    text-transform: uppercase;
+    border: none;
+    color: inherit;
+}
+
+.heading {
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 30px auto;
+    font-size: 28px;
+}
+
+
+
+
+
+
+/* ========================== Body ========================= */
+
+.navbar {
+    display: flex;
+    padding : 5px 30px;
+    background-color: rgb(110, 74, 202);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+}
+
+.navbar-brand {
+    flex: 1;
+    filter: drop-shadow(0 0 5px rgb(97, 224, 238));
+}
+
+.navbar-menu {
+    flex: 1;
+    text-align: right;
+}
+
+.navbar-menu li{
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.navbar-menu .nav-item {
+    color: rgba(255,255,255,.7);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-menu {
+    padding: 8px 15px;
+    position:fixed;
+    right: 4%;
+    background-color: rgb(110, 74, 202);
+    border: none;
+    border-radius: 10px;
+    color: #d5b7eb;
+    font-weight: bold;
+    box-shadow: 4px 4px 10px rgb(184, 162, 240) , -4px -4px 10px rgb(68, 35, 151);
+    visibility: hidden;
+}
+
+.sidebar {
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 30px;
+    width: 150px;
+    background-color: #f4e9fc;
+    z-index: 9999999;
+    transform: translate(-250px , 0px);
+}
+
+.sidebar-item {
+    margin: 10px 20px;
+    font-size: 14px;
+}
+
+
+.sidebar-muncul {
+    animation: sidebarMuncul 1s ease-in-out forwards;
+}
+
+.sidebar-hidden {
+    animation: sidebarHidden 1s ease-in-out forwards;
+}
+
+.btn-menu:hover {
+    box-shadow: 4px 4px 6px rgb(184, 162, 240) , -4px -4px 6px rgb(68, 35, 151);
+    /* box-shadow: inset -2px -2px 5px rgb(184, 162, 240) , inset 2px 2px 5px rgb(68, 35, 151); */
+}
+
+
+/* Jumbotron */
+.jumbotron {
+    position: relative;
+    margin-right: -60px;
+    margin-left: -60px;
+    padding: 100px 30px;
+    overflow: hidden;
+    background-image: linear-gradient(90deg , rgb(14, 30, 105) , rgb(51, 8, 92) );
+}
+
+.jumbotron p {
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.btn-jumbotron {
+    border: 2px solid rgba(255,255,255, .7);
+    color: rgba(255,255,255, .7);
+    border-radius: 5px;
+    padding: 10px 30px;
+    background-color: rgba(54, 5, 107 , .2);
+}
+
+.btn-jumbotron:hover {
+    background-color: rgba(255,255,255, .1);
+    border: 2px solid white;
+}
+
+
+
+/* Tentang Corona */
+.virus-corona {
+    min-height: 200px;
+    min-width: 200px;
+}
+
+.corona p {
+    font-size: 18px;
+}
+
+
+
+/* Gejala */
+
+.gejala , .penularan  , #tentangCorona , #imgCorona , #pencegahanA , #pencegahanB , #pencegahanC{
+    opacity: 0;
+}
+
+.gejala .row{
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width:260px;
+    align-items: flex-end;
+    margin: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #ecd2ff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #9c78b6 , -5px -5px 10px #f7f1fa;
+}
+
+
+
+/* Penularan */
+.penularan , .jml-korban{
+    margin: 20px -60px;
+    background-attachment: fixed;
+}
+
+.penularan .row {
+    justify-content: center;
+}
+
+.penularan .card {
+    max-width: 320px;
+}
+
+.penularan .card .rwd {
+    height: 200px;
+    display:flex;
+}
+
+/* Perkembangan */
+.perkembangan #myChart {
+    max-width: 100%;
+    max-height: 300px;
+    /* width: 200px; */
+}
+
+
+/* Pencegahan */
+
+.pencegahan .item {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: #ecd2ff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #9c78b6 , -5px -5px 10px #f7f1fa;
+    margin: 20px;
+    padding: 10px 30px;
+}
+
+.pencegahan .item .col {
+    text-align: center;
+    height: 120px;
+    width: 120px !important;
+    display: flex;
+    align-items: center;
+}
+
+.pencegahan .item .col img {
+    max-height: 100px;
+}
+
+
+
+/* Masker */
+.card-big {
+    width: 70%;
+    box-shadow: 5px 5px 10px #9c78b6 , -5px -5px 10px #f7f1fa;
+    margin: 30px auto;
+    padding: 40px 60px;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+
+
+/* Footer */
+.footer  {
+    padding: 30px 80px;
+    background-image: linear-gradient(180deg , #ebd1ff , #d6a9f8);
+
+}
+
+.footer .row .item {
+    width: 300px;
+    margin:20px;
+    padding: 20px;
+}
+
+.footer .title-footer {
+    font-weight: 200;
+    margin: 16px auto;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.footer li a {
+    font-weight: 200;
+    color: rgba(93, 44, 133 , .6);
+}
+
+footer {
+    padding: 20px;
+    background-color: #d6a9f8;
+}
+
+
+/* ===============================  RWD ========================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+    /* .container {
+        padding: 0px 20px;
+    } */
+    
+    .navbar {
+        display: block;
+    }
+    
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-nav {
+        display: block;
+    }
+
+    .btn-menu {
+        visibility: visible;
+    }
+}
+@media (max-width: 372px) {
+    .container {
+        padding: 0px 20px;
+    }
+}
+
+
+
+/* =============================== Animation ========================= */
+
+
+@keyframes landingTop {
+    0% {
+        opacity : 0;
+        transform: translate( 0px , 100px);
+    }
+
+    80% {
+        opacity: .8;
+        transform: translate(0px , -20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px , 0px);
+    }
+}
+
+@keyframes landingDown {
+    0% {
+        opacity : 0;
+        transform: translate( 0px , -100px);
+    }
+
+    80% {
+        opacity: .8;
+        transform: translate(0px , 20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px , 0px);
+    }
+}
+
+@keyframes landingLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-80px , 0px);
+    }
+
+    80% {
+        opacity: .8;
+        transform: translate(20px , 0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px , 0px);
+    }
+}
+
+@keyframes landingRight {
+    0% {
+        opacity: 0;
+        transform: translate(80px , 0px);
+    }
+
+    80% {
+        opacity: .8;
+        transform: translate(-20px , 0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px , 0px);
+    }
+}
+
+@keyframes sidebarMuncul {
+    0% {
+        transform: translate( -250px , 0px);
+    }
+
+    80% {
+        transform: translate(20px , 0px);
+    }
+
+    100% {
+        transform: translate(0px , 0px);
+    }
+}
+
+@keyframes sidebarHidden {
+    100% {
+        transform: translate( -250px , 0px);
+    }
+
+    50% {
+        transform: translate(20px , 0px);
+    }
+
+    0% {
+        transform: translate(0px , 0px);
+    }
+}

@@ -1,0 +1,141 @@
+
+
+
+/* =============================== Animation ========================= */
+
+
+
+
+/* open class animation */
+.icon.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 18px
+}
+.icon.open span:nth-child(2) {
+    transform: rotateX(90deg);
+}
+.icon.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 18px;
+}
+
+
+@keyframes landingTop {
+    0% {
+        opacity : 0;
+        transform: translate( 0px , 100px);
+    }
+
+    80% {
+        opacity: .8;
+        transform: translate(0px , -20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px , 0px);
+    }
+}
+
+@keyframes landingDown {
+    0% {
+        opacity : 0;
+        transform: translate( 0px , -100px);
+    }
+
+    80% {
+        opacity: .8;
+        transform: translate(0px , 20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px , 0px);
+    }
+}
+
+@keyframes landingLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-80px , 0px);
+    }
+
+    80% {
+        opacity: .8;
+        transform: translate(20px , 0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px , 0px);
+    }
+}
+
+@keyframes landingRight {
+    0% {
+        opacity: 0;
+        transform: translate(80px , 0px);
+    }
+
+    80% {
+        opacity: .8;
+        transform: translate(-20px , 0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px , 0px);
+    }
+}
+
+@keyframes sidebarMuncul {
+    0% {
+        transform: translate( -105px , 0px) scaleX(0);
+    }
+
+    80% {
+        transform: translate(20px , 0px) scaleX(1.2);
+    }
+
+    100% {
+        transform: translate(0px , 0px) scaleX(1);
+    }
+}
+
+@keyframes sidebarHidden {
+    100% {
+        transform: translate( -105px , 0px) scaleX(0);
+    }
+
+    50% {
+        transform: translate(20px , 0px) scaleX(1.2);
+    }
+
+    0% {
+        transform: translate(0px , 0px) scaleX(1);
+    }
+}
+
+@keyframes modalFade {
+    0% {
+        /* opacity:0; */
+    }
+
+    100% {
+        /* opacity: 1; */
+        transform: rotateX(0deg);
+    }
+}
+
+@keyframes modalClose {
+    0% {
+        /* opacity: 1; */
+        transform: rotateX(0deg);
+    }
+    
+    100% {
+        /* opacity: 0; */
+        transform: rotateX(90deg);
+    }
+}
+

@@ -1,0 +1,20 @@
+.container {
+    flex-wrap : nowrap | wrap | wrap-reverse;
+}
+
+.container {
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.container {
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: stretch;
+    align-items: baseline;
+}
